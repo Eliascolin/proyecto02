@@ -37,13 +37,13 @@ gap: 1rem;
 border-radius: 3%;
 }
 
-@media (max-width:775){
+@media (max-width:465px){
 
     section{
-
-        max-width: 15rem;
-
+        max-width: 20rem;
     }
+
+
 
 }
 
@@ -63,7 +63,6 @@ border-radius: 3%;
 
 }
 
-
 @keyframes gite {  
 
     50%{
@@ -74,6 +73,38 @@ border-radius: 3%;
         width: 13,5;
     }
 }
+
+@media (max-width:465px){
+
+    .git-hub{
+        max-width: 5rem;
+        position: fixed;
+        top: 5rem;
+        right: 0.02rem;
+        z-index: 1;
+        animation-name:  pequeno;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+    }
+
+
+    @keyframes pequeno {  
+
+        50%{
+            width: 6rem;
+        }
+    
+        75%{
+            width: 7.5rem;
+        }
+    }
+
+
+
+}
+
+
 
 .mensagem{
 
@@ -110,6 +141,28 @@ width: 100%;
   padding: 3rem;
 }
 
+@media(max-width:465px){
+
+    .foote-info{
+display: flex;
+justify-content: space-between;
+gap: 1rem;
+    }
+    
+}
+
 .img-info{
 max-width: 6rem;
+}
+
+@media (max-width:465px){
+
+    .img-info {
+        max-width: 5rem;
+        display: flex;
+        justify-content:space-around;
+    }
+
+
+
 }
